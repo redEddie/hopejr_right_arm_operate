@@ -22,7 +22,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'bridge_node = hopejr_real_bridge.real_bridge_node:main'
+            'bridge_node = hopejr_real_bridge.real_bridge_node:main',
+            'motor_state_pub = hopejr_real_bridge.motor_state_publisher:main',
+            'joint_state_estimator = hopejr_real_bridge.joint_state_estimator:main',
+            'calibration = hopejr_real_bridge.calibration:main',
         ],
     },
 )
